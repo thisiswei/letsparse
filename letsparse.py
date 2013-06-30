@@ -8,10 +8,7 @@ IMG_URL = 'http://images.urbanoutfitters.com/is/image/UrbanOutfitters/%s_%s_'
 FORMS = ['?$detailThumb$', '?$detailMain$']
 
 def make_soup(url):
-    r = None
-    try:
-        r = requests.get(url)
-    except
+    r = requests.get(url)
     s = BeautifulSoup(r.content, 'lxml')
     return s
 
